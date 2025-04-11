@@ -1,0 +1,8 @@
+,tokyo_tower,senso_ji,akihabara,meiji_shrine,tsukiji_market,odaiba,shinjuku_garden
+tokyo_tower,0,2812,2355,2658,1505,3564,2213
+senso_ji,2812,0,457,154,1307,752,599
+akihabara,2355,457,0,303,850,1209,142
+meiji_shrine,2658,154,303,0,1153,906,445
+tsukiji_market,1505,1307,850,1153,0,2059,708
+odaiba,3564,752,1209,906,2059,0,1351
+shinjuku_garden,2213,599,142,445,708,1351,0
