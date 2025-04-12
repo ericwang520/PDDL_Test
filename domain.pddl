@@ -13,9 +13,9 @@
     (next_slot ?ts1 ?ts2 - time_slot)
     (open ?loc - location ?d - day ?ts - time_slot)
     (visited_on_day ?loc - location ?d - day)
-    (day_visit_count ?d - day ?n - counter)   ; 每天訪問的景點數量
-    (next_count ?n1 ?n2 - counter)            ; 計數器的遞增關係
-    (max_visits_reached ?d - day)             ; 標記某天已達到最大訪問量
+    (day_visit_count ?d - day ?n - counter)
+    (next_count ?n1 ?n2 - counter)
+    (max_visits_reached ?d - day)
   )
   (:functions
     (total-cost - number)
@@ -45,17 +45,17 @@
       (day_now ?d)
       (time_slot_now ?ts)
       (open ?loc ?d ?ts)
-      (day_visit_count ?d ?n1)       ; 當前訪問數量
-      (next_count ?n1 ?n2)           ; n2 是 n1 的下一個數
-      (not (max_visits_reached ?d))  ; 尚未達到最大訪問量
+      (day_visit_count ?d ?n1)
+      (next_count ?n1 ?n2)
+      (not (max_visits_reached ?d))
     )
     :effect (and
       (visited ?loc)
       (visited_on_day ?loc ?d)
       (not (day_visit_count ?d ?n1))
       (day_visit_count ?d ?n2)
-      (when (= ?n2 c2)              ; 如果訪問計數達到 2
-        (max_visits_reached ?d))    ; 標記已達最大訪問量
+      (when (= ?n2 c2)
+        (max_visits_reached ?d))
       (increase (total-cost) (play_time ?loc))
     )
   )

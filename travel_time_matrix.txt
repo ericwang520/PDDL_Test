@@ -1,0 +1,8 @@
+	tokyo_tower	senso_ji	akihabara	meiji_shrine	tsukiji_market	odaiba	shinjuku_garden
+tokyo_tower	0	42	29	69	25	52	30
+senso_ji	38	0	19	69	30	56	44
+akihabara	31	15	0	69	22	50	29
+meiji_shrine	35	51	41	0	41	52	29
+tsukiji_market	24	31	20	69	0	41	37
+odaiba	52	55	50	52	37	0	58
+shinjuku_garden	31	42	27	69	33	56	0
